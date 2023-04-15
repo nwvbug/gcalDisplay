@@ -23,3 +23,6 @@ def mainSite():
 @cross_origin()
 def notify():
     notificationData = request.json
+
+if __name__ == "__main__":
+  app.run(host='0.0.0.0', port=80)
