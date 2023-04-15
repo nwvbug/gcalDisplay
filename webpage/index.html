@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>google calendar checker</title>
+    
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Mono+One&display=swap');
+
+.largeheader{
+    font-family: 'Poppins', sans-serif;
+    font-size:50px;  
+    font-weight: bolder;  
+}
+
+.smallheader{
+    font-family: 'Poppins', sans-serif;
+    font-size:75px;  
+}
+
+.details{
+    font-family: 'Poppins', sans-serif;
+    font-size:50px;  
+}
+
+.bodyGr{
+    /* background-image:linear-gradient(to bottom right, #42f545, #2E3440); */
+    /* background: linear-gradient(110deg, #42f545 15%, #2E3440 100%); */
+    font-family: 'Poppins', sans-serif;
+    background-image:
+    radial-gradient(
+      circle at top,
+      #42f545,
+      #2E3440 70%
+    );
+    color:#D8DEE9;
+}
+
+.bodyR{
+    /* background: linear-gradient(110deg, #de2f2f 15%, #2E3440 100%); */
+    font-family: 'Poppins', sans-serif;
+    background-image:
+    radial-gradient(
+      circle at top,
+      #de2f2f,
+      #2E3440 70%
+    );
+
+    color:#D8DEE9;
+}
+
+.bodyDefault{
+    /* background: linear-gradient(110deg, #de2f2f 15%, #2E3440 100%); */
+    font-family: 'Poppins', sans-serif;
+    background-image:
+    radial-gradient(
+      circle at top,
+      #2E3440,
+      #2E3440 70%
+    );
+
+    color:#D8DEE9;
+}
+</style>
+
+
+<body class="bodyDefault" id="body">
+    <!-- <div style="display:flex; flex-direction: column; justify-content: center; align-items: center;"> -->
+        <div style="display:flex; justify-content: center;">
+            <div class="largeheader" style="text-align: center; background-color: #4C566A; border-radius: 15px; width: fit-content; padding:20px;">Xxxxxx's Calendar</div>
+        </div>
+        <div style="display: flex; flex-direction: row; height:70vh; justify-content: space-around; top: 10%; position:relative;">
+
+            <div style="background-color: #4C566A; border-radius: 15px; width:40vw; height:70vh; text-align: center; display:flex; flex-direction: column; justify-content: space-around;">
+                <div class="largeheader">Meeting with</div>
+                <div class="largeheader" style="font-size: 75px">Xxxxxx Xxxxxxxxx</div>
+                <div class="largeheader" style="font-size:120px">X:XX PM</div>
+            </div>
+            
+            <div style="background-color: #4C566A; border-radius: 15px; width:40vw; height:70vh; text-align: center;">
+                <div class="largeheader">Later today,</div>
+
+                <div style="border-top: 5px solid #2E3440;">
+                    <div class="details">Xxxx Xxxxxx at X:XX PM</div>
+                </div>
+
+                <div style="border-top: 5px solid #2E3440;">
+                    <div class="details">Xxxx Xxxxxx at X:XX PM</div>
+                </div>
+
+                <div style="border-top: 5px solid #2E3440;">
+                    <div class="details">Xxxx Xxxxxx at X:XX PM</div>
+                </div>
+
+                <div style="border-top: 5px solid #2E3440;">
+                    <div class="details">Xxxx Xxxxxx at X:XX PM</div>
+                </div>
+
+                <div style="border-top: 5px solid #2E3440;">
+                </div>
+            </div>
+    
+    
+        </div>
+    
+    <!-- </div> -->
+    
+</body>
+<script>
+    function makeBusy(){
+        document.getElementById("body").className = "bodyR";
+    }
+
+    function makeFree(){
+        document.getElementById("body").className = "bodyGr";
+    }
+</script>
+</html>
