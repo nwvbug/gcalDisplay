@@ -1,2 +1,4 @@
 # gcalDisplay
-google calendar display for door
+current thinking is:
+
+htmlcss for webpage, connected to py server on raspberry pi
